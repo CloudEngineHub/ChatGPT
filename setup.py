@@ -1,4 +1,5 @@
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
+
 setup(
     name = "revChatGPT",
     version = "0.0.14",
@@ -10,7 +11,7 @@ setup(
     package_dir={'': 'src'},
     url = "https://github.com/acheong08/ChatGPT",
     install_requires = [
-        "requests"
+        "requests", "httpx"
     ],
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
